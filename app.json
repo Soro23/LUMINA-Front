@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "lumina-front",
+    "name": "LUMINA",
     "slug": "lumina-front",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -39,6 +39,10 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
     }
   }
 }

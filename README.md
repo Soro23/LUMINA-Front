@@ -76,9 +76,13 @@
 ### `babel.config.js`
 ```js
 module.exports = {
-  presets: ['babel-preset-expo'],
-  plugins: ['react-native-reanimated/plugin'],
+    presets: ['babel-preset-expo'],
+    plugins: [
+        '@babel/plugin-proposal-export-namespace-from',
+        'react-native-reanimated/plugin',
+    ],
 };
+
 ```
 
 ### `app.json`
@@ -87,6 +91,23 @@ module.exports = {
   "expo": {
     "name": "LUMINA",
     "slug": "lumina-front",
+    "version": "1.0.0",
+    "icon": "./assets/images/icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.luminafront"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
     "updates": {
       "enabled": true,
       "fallbackToCacheTimeout": 0
